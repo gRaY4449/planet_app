@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+.columns{
+    font-weight: normal;
+}
+.columns2{
+    padding: 10px;
+    padding-left: 0;
+}
