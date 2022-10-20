@@ -1,7 +1,21 @@
 @extends('layouts.main')
-@section('title', '店舗情報修正')
+@section('title', '惑星情報修正')
 @section('content')
-    <h1>店舗情報修正</h1>
+    <h1>惑星情報修正</h1>
+
+
+    @if ($errors->any())
+        <div class="error">
+            <p>
+                <b>{{ count($errors) }}件のエラーがあります。</b>
+            </p>
+            <ul>
+                @foreach($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
 
     <form action="{{ route('planets.update', $planet) }}" method="post">
         @csrf
