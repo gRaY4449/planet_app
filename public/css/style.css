@@ -1,12 +1,14 @@
 @charset "utf-8";
 
-.columns{
+.columns {
     font-weight: normal;
 }
-.columns2{
+
+.columns2 {
     padding: 10px;
     padding-left: 0;
 }
+
 .error {
     color: red;
 }
